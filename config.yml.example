@@ -67,6 +67,7 @@ enabled_plugins:
   - FamilyCircus
   - FML
   - GarfieldMinusGarfield
+  - GoogleImageSearch
   - HackADay
   - HackerNews
   - Insult
