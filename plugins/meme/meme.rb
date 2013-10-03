@@ -10,7 +10,9 @@ class Meme < Isis::Plugin::Base
     '!fry' => 'http://i0.kym-cdn.com/photos/images/original/000/131/399/fry.PNG?1307468855',
     '!tyson' => 'http://i2.kym-cdn.com/photos/images/original/000/198/020/BRTky.jpg',
     '!bees' => 'http://img.gawkerassets.com/img/17fxr90k1uawbgif/original.gif',
-    '!davidcaruso' => 'http://images.wikia.com/random-ness/images/8/8c/CSi_Miami_sunglasses.gif'
+    '!caruso' => 'http://images.wikia.com/random-ness/images/8/8c/CSi_Miami_sunglasses.gif',
+    '!massimo' => 'http://i0.kym-cdn.com/entries/icons/original/000/000/567/Massimo.jpg',
+    '!clap' => 'http://i9.photobucket.com/albums/a81/Gn4rk1ll/citizen-kane-clapping.gif'
   }
 
   TRIGGERS = TRIGGER_TO_IMAGE_URL.keys
