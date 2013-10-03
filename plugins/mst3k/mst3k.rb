@@ -22,7 +22,7 @@ class Mst3k < Isis::Plugin::Base
 
   def response_text
     page = Nokogiri.HTML(open(PAGES.sample))
-    quote = page.css('p')[1..-1].sample.text
+    quote = page.css('p')[1..-1].to_a.sample.text
     "#{quote}"
   end
 end
