@@ -9,7 +9,8 @@ class Meme < Isis::Plugin::Base
     '!dwight' => 'http://v1.memecaptain.com/dwight_schrute.jpg',
     '!fry' => 'http://i0.kym-cdn.com/photos/images/original/000/131/399/fry.PNG?1307468855',
     '!tyson' => 'http://i2.kym-cdn.com/photos/images/original/000/198/020/BRTky.jpg',
-    '!bees' => 'http://img.gawkerassets.com/img/17fxr90k1uawbgif/original.gif'
+    '!bees' => 'http://img.gawkerassets.com/img/17fxr90k1uawbgif/original.gif',
+    '!davidcaruso' => 'http://images.wikia.com/random-ness/images/8/8c/CSi_Miami_sunglasses.gif'
   }
 
   TRIGGERS = TRIGGER_TO_IMAGE_URL.keys
