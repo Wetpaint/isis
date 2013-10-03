@@ -17,6 +17,7 @@ gem 'tzinfo'
 gem 'gdbm'
 gem 'therubyrhino', platforms: :jruby
 gem 'therubyracer', platforms: :ruby
+gem 'google-search', git: 'https://github.com/visionmedia/google-search.git'
 
 # Domain
 gem 'whois'
