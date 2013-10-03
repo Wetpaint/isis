@@ -59,6 +59,7 @@ enabled_plugins:
   - DailyKitten
   - DailyPuppy
   - DefProgramming
+  - DevopsReactions
   - DesignMilk
   - Domain
   - EpicFail
@@ -74,7 +75,9 @@ enabled_plugins:
   - LikeABoss
   - LOLCats
   - Lynda
+  - Meme
   - MissionStatement
+  - Mst3k
   - PennyArcade
   - PeopleOfWalmart
   - PizzaGifs
