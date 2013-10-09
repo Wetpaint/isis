@@ -12,7 +12,9 @@ class Meme < Isis::Plugin::Base
     '!bees' => 'http://img.gawkerassets.com/img/17fxr90k1uawbgif/original.gif',
     '!caruso' => 'http://images.wikia.com/random-ness/images/8/8c/CSi_Miami_sunglasses.gif',
     '!massimo' => 'http://i0.kym-cdn.com/entries/icons/original/000/000/567/Massimo.jpg',
-    '!clap' => 'http://i9.photobucket.com/albums/a81/Gn4rk1ll/citizen-kane-clapping.gif'
+    '!clap' => ['http://i9.photobucket.com/albums/a81/Gn4rk1ll/citizen-kane-clapping.gif', 
+                'http://myscriptx.com/dl/94/seinfeld-clap.gif'],
+    '!disaster' => 'http://i3.kym-cdn.com/photos/images/original/000/000/130/disaster-girl.jpg'
   }
 
   TRIGGERS = TRIGGER_TO_IMAGE_URL.keys
@@ -41,6 +43,7 @@ class Meme < Isis::Plugin::Base
 
   def get_meme_url
     image_url = TRIGGER_TO_IMAGE_URL[@meme]
+    image_url = image_url.sample if image_url.is_a?(Array)
 
     if @line1
       meme_url = "http://v1.memecaptain.com/i?u=#{image_url}&tt=#{CGI.escape(@line1.strip)}"
