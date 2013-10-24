@@ -15,7 +15,8 @@ class Meme < Isis::Plugin::Base
     '!clap' => ['http://i9.photobucket.com/albums/a81/Gn4rk1ll/citizen-kane-clapping.gif', 
                 'http://myscriptx.com/dl/94/seinfeld-clap.gif'],
     '!disaster' => 'http://i3.kym-cdn.com/photos/images/original/000/000/130/disaster-girl.jpg',
-    '!silverman' => 'http://i0.kym-cdn.com/entries/icons/original/000/005/545/OpoQQ.jpg'
+    '!silverman' => 'http://i0.kym-cdn.com/entries/icons/original/000/005/545/OpoQQ.jpg',
+    '!successkid' => 'http://shelleygeorge.files.wordpress.com/2013/02/success-kid-i-hate-sandcastles-ayer.jpg'
   }
 
   TRIGGERS = TRIGGER_TO_IMAGE_URL.keys
