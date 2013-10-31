@@ -17,7 +17,8 @@ class Meme < Isis::Plugin::Base
     '!disaster' => 'http://i3.kym-cdn.com/photos/images/original/000/000/130/disaster-girl.jpg',
     '!silverman' => 'http://i0.kym-cdn.com/entries/icons/original/000/005/545/OpoQQ.jpg',
     '!successkid' => 'http://shelleygeorge.files.wordpress.com/2013/02/success-kid-i-hate-sandcastles-ayer.jpg',
-    '!tonygoats' => ['http://i.imgflip.com/4h60p.gif', 'http://i.imgflip.com/4hwym.gif']
+    '!tonygoats' => ['http://i.imgflip.com/4h60p.gif', 'http://i.imgflip.com/4hwym.gif'],
+    '!yuno' => 'http://images3.wikia.nocookie.net/__cb20130926035925/powerlisting/images/2/29/618px-Y-u-no-exploitable.png'
   }
 
   TRIGGERS = TRIGGER_TO_IMAGE_URL.keys
