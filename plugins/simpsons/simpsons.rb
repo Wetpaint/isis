@@ -12,7 +12,7 @@ class Simpsons < Isis::Plugin::Base
   private
 
   def response_text
-    page = Nokogiri.HTML(open('http://http://simpsonsgifs.tumblr.com/random'))
+    page = Nokogiri.HTML(open('http://simpsonsgifs.tumblr.com/random'))
     title = page.css('.post .copy').text
     img = page.css('.post .media img').attr('src').value
     "#{title} #{img}"
