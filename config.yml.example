@@ -88,6 +88,7 @@ enabled_plugins:
   - SmashingMagazine
   - StockTicker
   - ThatsWhatSheSaid
+  - Tumblr
   - Uptime
   - Weather
   - WebDesignLedger
