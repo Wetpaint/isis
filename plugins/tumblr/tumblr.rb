@@ -1,7 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 
-class DevopsReactions < Isis::Plugin::Base
+class Tumblr < Isis::Plugin::Base
 
   TRIGGERS = %w(!tumblr)
 
