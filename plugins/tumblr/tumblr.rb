@@ -6,8 +6,12 @@ class Tumblr < Isis::Plugin::Base
   TRIGGERS = %w(!tumblr)
 
   def respond_to_msg?(msg, speaker)
-    TRIGGERS.include? msg.split(' ')[0].downcase
-    @domain = msg.split(' ')[1]
+    if TRIGGERS.include? msg.split(' ')[0].downcase
+      @domain = msg.split(' ')[1]
+      return true
+    else
+      return false
+    end
   end
 
   private
