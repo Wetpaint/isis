@@ -21,8 +21,8 @@ class Mst3k < Isis::Plugin::Base
   private
 
   def response_text
-    page = Nokogiri.HTML(open(PAGES.sample))
-    quote = page.css('p')[1..-1].to_a.sample.text
-    "#{quote}"
+    page = Nokogiri.HTML(open('http://www.uproxx.com/gammasquad/2012/09/the-best-mst3k/'))
+    img_src = page.css.('.post-body').css('img').to_a.sample.attr('src')
+    "#{img_src}"
   end
 end
