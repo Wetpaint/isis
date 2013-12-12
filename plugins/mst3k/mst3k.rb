@@ -20,9 +20,9 @@ class Mst3k < Isis::Plugin::Base
 
   private
 
-  def response_text
-    page = Nokogiri.HTML(open('http://www.uproxx.com/gammasquad/2012/09/the-best-mst3k/'))
-    img_src = page.css('.post-body img').to_a.sample.attr('src')
-    "#{img_src}"
+  def response_html
+    page = Nokogiri.HTML(open('http://www.imdb.com/title/tt0094517/quotes'))
+    quote = page.css('#content-2-wide .list div.quote').to_a.sample
+    "#{quote}"
   end
 end
