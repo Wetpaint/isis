@@ -20,10 +20,9 @@ class Mst3k < Isis::Plugin::Base
 
   private
 
-  def response_html
-    page = Nokogiri.HTML(open('http://www.imdb.com/title/tt0094517/quotes'))
-    quote = page.css('#content-2-wide .list div.quote').to_a.sample
-    quote.search('.//div').remove
+  def response_text
+    page = Nokogiri.HTML(open(PAGES.sample))
+    quote = page.css('p')[1..-1].to_a.sample.text
     "#{quote}"
   end
 end
