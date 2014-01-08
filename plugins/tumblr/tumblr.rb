@@ -18,7 +18,7 @@ class Tumblr < Isis::Plugin::Base
 
   def response_html
     request = open("http://#{@domain}.tumblr.com/random")
-    page = Nokogiri.HTML(request.uri)
+    page = Nokogiri.HTML(request)
     img = page.css('#content img')
     img = img[0] if img.is_a? Array
     img = img.attr('src').value
