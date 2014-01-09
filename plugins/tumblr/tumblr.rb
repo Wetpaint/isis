@@ -22,7 +22,7 @@ class Tumblr < Isis::Plugin::Base
     img = page.css('#content img')
     img = img[0] if img.is_a? Array
     img = img.attr('src').value
-    "#{request.base_uri} <img src='#{img}'/>"
+    "<a href='#{request.base_uri}'>#{request.base_uri}</a><br /><img width='300' height='300' src='#{img}'/>"
   end
 
   def response_text
