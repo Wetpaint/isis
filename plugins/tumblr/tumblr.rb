@@ -20,10 +20,10 @@ class Tumblr < Isis::Plugin::Base
     request = open("http://#{@domain}.tumblr.com/random")
     page = Nokogiri.HTML(request)
     img = page.css('#content img')
-    img = page.css('.content img') if img.nil? || img.empty?
+    img = page.css('.photo-wrapper img') if img.nil? || img.empty?
     img = img[0] if img.is_a? Array
     img = img.attr('src').value
-    "<a href='#{request.base_uri}'>#{request.base_uri}</a><br /><img width='300' height='300' src='#{img}'/>"
+    "<a href='#{request.base_uri}'>#{request.base_uri}</a><br /><img width='400' height='300' src='#{img}'/>"
   end
 
   def response_text
