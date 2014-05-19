@@ -19,7 +19,8 @@ class Meme < Isis::Plugin::Base
     '!successkid' => 'http://shelleygeorge.files.wordpress.com/2013/02/success-kid-i-hate-sandcastles-ayer.jpg',
     '!tonygoats' => ['http://i.imgflip.com/4h60p.gif', 'http://i.imgflip.com/4hwym.gif'],
     '!yuno' => 'http://images3.wikia.nocookie.net/__cb20130926035925/powerlisting/images/2/29/618px-Y-u-no-exploitable.png',
-    '!onedoesnot' => 'http://cdn.memegenerator.net/images/3291562.jpg'
+    '!onedoesnot' => 'http://cdn.memegenerator.net/images/3291562.jpg',
+    '!stevens' => 'http://s3.amazonaws.com/uploads.hipchat.com/10097/732694/WP1iMh5SYFxT0UI/upload.png'
   }
 
   TRIGGERS = TRIGGER_TO_IMAGE_URL.keys
