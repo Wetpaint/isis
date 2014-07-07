@@ -29,9 +29,6 @@
 - Awkward Family Photos
   - command: say "awkward" in a line of chat
   - posts random image from [Awkward Family Photos](http://awkwardfamilyphotos.com)
-- Bash
-  - command: !bash
-  - posts random "top quote" from [bash.org](http://bash.org)
 - Cat Facts
   - command: !catfacts
   - posts random cat fact
