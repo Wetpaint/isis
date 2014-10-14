@@ -20,7 +20,8 @@ class Meme < Isis::Plugin::Base
     '!tonygoats' => ['http://i.imgflip.com/4h60p.gif', 'http://i.imgflip.com/4hwym.gif'],
     '!yuno' => 'http://images3.wikia.nocookie.net/__cb20130926035925/powerlisting/images/2/29/618px-Y-u-no-exploitable.png',
     '!onedoesnot' => 'http://cdn.memegenerator.net/images/3291562.jpg',
-    '!stevens' => 'http://s3.amazonaws.com/uploads.hipchat.com/10097/732694/WP1iMh5SYFxT0UI/upload.png'
+    '!stevens' => 'http://s3.amazonaws.com/uploads.hipchat.com/10097/732694/WP1iMh5SYFxT0UI/upload.png',
+    '!wpteam' => 'http://cache.milesplit.com/user_files/193359/111350/wpteam.jpg'
   }
 
   TRIGGERS = TRIGGER_TO_IMAGE_URL.keys
